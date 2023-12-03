@@ -1,3 +1,8 @@
+Parse FLP project files
+A project to help organise my massive flp projects folder
+
+With help from: 
+https://github.com/andrewrk/PyDaw/blob/master/FLP_Format
 ```
 How it works:
 
