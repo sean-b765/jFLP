@@ -1,5 +1,7 @@
 package org.sean.event;
 
+import org.sean.parser.ProgramOptions;
+
 import java.lang.reflect.Field;
 
 /**
@@ -17,7 +19,8 @@ public class Event {
 
     public Event(int eventId) {
         this.eventId = eventId;
-        this.name = getFieldName(this.eventId);
+
+        if (ProgramOptions.get().reflection) this.name = getFieldName(this.eventId);
     }
 
     public static String getFieldName(int value) {
